@@ -1,0 +1,23 @@
+<html>
+<head>
+    <script src="./Assgni.js"></script>
+    <script>
+        let counter = new Counter(updateUI)
+        const inputChange = e => {
+            handleInput(e.target.value, counter.changeTimer);
+        }
+    </script>
+
+</head>
+
+<body>
+<div id="count"></div>
+<input onchange="inputChange(event)" placeholder="1000"/>
+
+<button onclick="counter.start()">Start</button>
+<button onclick="counter.stop()">Stop</button>
+<button onclick="counter.resume()">Resume</button>
+
+</body>
+
+</html>
